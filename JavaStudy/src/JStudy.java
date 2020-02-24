@@ -1,10 +1,16 @@
 
 public class JStudy {
+	static int i  = 5;
 
-	public static void main(String[] args) {
-		int a=0;
-		System.out.println(a);
-		System.out.println(11);
+	static void a() {
+		int i = 10;
+		b();
 	}
-
+	static void b() {
+		System.out.println(i);
+	}
+	
+	public static void main(String[] args) {		
+		a();
+	}
 }
