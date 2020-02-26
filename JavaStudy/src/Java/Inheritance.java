@@ -18,7 +18,7 @@ class Test1 {
 
 class Test2 extends Test1 {
 	public Test2(int a, int b) {
-		super(a,b);		//super는 상위 클래스의 생성자를 의미한다.
+		super(a,b);		//super는 상위 클래스를 가리키는 키워드 (a,b)는 생성자를 의미
 	}	
 		
 		/* 하위 클래스가 호출될 때 자동으로 상위 클래스의 기본 생성자를 호출한다.
