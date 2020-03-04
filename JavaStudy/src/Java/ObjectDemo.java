@@ -23,7 +23,7 @@ class Ob extends Object { 	// 모든 클래스는 Object를 암시적으로 상속받고 있다. (
 	
 	public String toString() {		// 인스턴스에 a,b값을 알기 위해 toString 메소드를 오버라이딩 했다.
 									// 원래 toString() 메소드는 객체를 문자로 표현하는 메소드이다.
-		return "Left : " + a + "right : " + b;
+		return "Left : " + a + " right : " + b;
 		
 	}
 	
@@ -38,7 +38,7 @@ public class ObjectDemo {
 		
 		student stu = new student("ego");
 		student stu1 = new student("ego");
-		System.out.println(stu == stu1);
+		System.out.println(stu == stu1);	// 원시적 데이터타입을 비교할때 ==을 사용한다 객체끼리는 불가능.
 		System.out.println(stu.equals(stu1));
 	}
 
