@@ -1,12 +1,18 @@
 package Java;
 
+interface Info2{
+	int getLevel2();
+}
+
 abstract class Info{
 	public abstract int getLevel();
 }
 
-class Person<T, S> extends Info {	// T라는 데이터타입은 존재하지 않는다, 인스턴스를 생성할 때 데이터 타입을 지정받아 필드의 데이터 타입을 지정한다.
-					// 복수의 제네릭도 사용이 가능하다.
-	public T info;	
+class Person<T, S /*extends Info*/> {	// T라는 데이터타입은 존재하지 않는다, 인스턴스를 생성할 때 데이터 타입을 지정받아 필드의 데이터 타입을 지정한다.
+										// 복수의 제네릭도 사용이 가능하다.
+										// 제네릭으로 올 수 있는 데이터 타입을 특정 클래스의 자식으로 제한할 수 있다.
+										// class Person<T extends Info> 즉 Person의 T는 info 클래스나 그 자식 외에는 올 수 없다.
+	public T info;		
 	public S id;
 	Person(T info, S id){
 		this.info = info;
@@ -19,10 +25,13 @@ class Person<T, S> extends Info {	// T라는 데이터타입은 존재하지 않는다, 인스턴�
 	
 }
 
-class StudentInfo{
+class StudentInfo implements Info2{		// extends는 상속 뿐 아니라 interface관계에서도 사용할 수 있다.
 	public int grade;
 	StudentInfo(int grade){
 		this.grade = grade;
+	}
+	public int getLevel2() {
+		return this.grade;
 	}
 }
 
