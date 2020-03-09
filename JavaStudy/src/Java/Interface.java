@@ -3,7 +3,9 @@ package Java;
 
 interface inter1{
 	int apple = 1; // 인터페이스로 선언된 변수는 무조건 public static final의 속성을 갖는다.(구현없이 사용가능)
-	public void a();
+	public static void a() {
+		System.out.println(11);
+	};
 	//private void c();
 	//인터페이스의 멤버는 반드시 public 이어야 한다.
 }
