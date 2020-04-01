@@ -8,7 +8,7 @@ import java.util.*;
 public class CollectionsFramework {
 
 	public static void main(String[] args) {
-		List<Integer> al = new ArrayList<Integer>();	// 제네릭 선언, 컬렉션을 사용할 때는 가급적 해당 컬렉션을 대표하는 인터페이스를 사용하는 것이 좋다.
+		List<Integer> al = new ArrayList<Integer>();	// 제네릭 선언, 컬렉션을 사용할 때는 가급적 해당 컬렉션을 대표하는 인터페이스를 사용하는 것이 좋다.(컬렉션프레임워크도 인터페이스다)
 		al.add(1);
 		al.add(2);
 		al.add(3);
