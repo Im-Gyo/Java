@@ -48,7 +48,7 @@ public class CollectionsFramework {
 //ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡHashMap
 		
 		HashMap<String, Integer> a = new HashMap<String, Integer>();
-		a.put("one", 1);	// Map에서 데이터를 추가할 때 사용하는 API는 put이다. 첫번째 인자는 값의 key이고, 두번째 인자는 key에대한 값이다. (수학 일대일 함수 구조)
+		a.put("one", 1);	// Map에서 데이터를 추가할 때 사용하는 API는 put이다. 첫번째 인자는 값의 key이고, 두번째 인자는 key에대한 값이다. (수학 일대일 함수 구조).
 		a.put("two", 2);
 		a.put("three", 3);
 		System.out.println(a.get("one"));
