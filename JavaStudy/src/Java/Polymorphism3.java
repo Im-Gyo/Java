@@ -28,7 +28,7 @@ public class Polymorphism3 {
 		I1 obj1 = new polinter();
 		I2 obj2 = new polinter();
 		
-		obj.A();	// obj인스턴스는 interface I1과 I2 모두를 구현하고 있는 polinter클래스를 데이터타입으로 선언했기 때문에 각각 interface에서 선언한 메소드들을 사용할 수 있다.
+		obj.A();	// obj인스턴스는 interface I1과 I2 모두를 구현하고 있는 polinter클래스를 데이터타입으로 선언했기 때문에 각각 interface에서 선언한 메소드들을 사용할 수 있다..
 		obj.B();
 		
 		obj1.A();	// obj1인스턴스는 interface I1 을 데이터타입으로 인스턴스화 했기 때문에, I1에서 선언한 메소드만 사용할 수 있다. (클래스는 polinter라서 오버라이드 한 메소드 사용)
